@@ -1,0 +1,9 @@
+name: momentum
+services:
+    docker-momentum:
+        ports:
+            - 3000:3000
+        volumes:
+            - /mnt/user/appdata/momentum:/root/Momentum
+        restart: always
+        image: ghcr.io/pedanxr/docker-momentum:main
